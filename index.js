@@ -6,7 +6,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      items: 20,
+      items: 10,
       loading: false
     };
   }
@@ -41,7 +41,7 @@ class App extends Component {
 
   render() {
     return (
-      <div ref="myscroll" style={{ height: "200px", overflow: "auto" }}>
+      <div ref="myscroll" style={{ height: "450px", overflow: "auto" }}>
         <ul> {this.showItems()} </ul>
         {this.state.loading ? <p className="App-intro">loading ...</p> : ""}
       </div>
